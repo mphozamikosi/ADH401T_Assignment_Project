@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+
+		<title>TWEET MANAGEMENT M Mikosi 215012786</title>
+
+	</h:head>
+
+	<h:body>
+
+		<h:form>
+
+			<table width="100%">
+
+				<tr>
+
+					<td align="center" colspan="3">
+
+						<h2>TWEET MANAGEMENT M Mikosi 215012786</h2>
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="center" colspan="3">
+
+						<br />
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="right" width="25%">
+
+						<h:outputLabel>tweet:</h:outputLabel>
+
+					</td>
+
+					<td width="15px" />
+
+					<td align="left" width="75%">
+
+						<h:inputTextarea value="#{tweetController.tweet.body}" rows="3" style="width: 375px" />
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="center" colspan="3">
+
+						<br />
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="right">
+
+						<h:commandButton action="#{tweetController.create}" value="Submit" />
+
+					</td>
+
+					<td />
+
+					<td align="left">
+
+						<h:commandButton action="tweets.xhtml" value="View Tweets" />
+
+					</td>
+
+				</tr>
+
+			</table>
+
+		</h:form>
+
+	</h:body>
+
+</html>
